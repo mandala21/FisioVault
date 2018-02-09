@@ -1,19 +1,90 @@
-<ion-menu [content]="content"  id="menu">
+<ion-menu [content]="content"  id="menu" >
   <ion-header>
     <ion-toolbar>
-      <ion-title>Menu</ion-title>
+      <ion-title><font color="#00a857"><strong>Menu</strong></font></ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
-    <ion-list>
-      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
-      </button>
-    </ion-list>
+    <ion-content >
+      <ion-list>
+        <div>
+          <button ion-item (click)="openPage(homePage)" style="background-color: white">
+            <ion-icon name="radio-button-on" md="md-radio-button-on" style= "color: green">
+            </ion-icon>
+              <font color="#00a857">
+                 Categoria 1
+              </font>
+          </button>
+      
+          <button ion-item (click)="openPage(homePage)" style="background-color: white">
+            <ion-icon name="radio-button-on" md="md-radio-button-on" style= "color: green">
+            </ion-icon>
+              <font color="#00a857">
+                 Categoria 2
+              </font>
+          </button>
+
+          <button ion-item (click)="openPage(homePage)" style="background-color: white">
+            <ion-icon name="radio-button-on" md="md-radio-button-on" style= "color: green">
+            </ion-icon>
+              <font color="#00a857">
+                 Categoria 3
+              </font>
+          </button>
+      
+          <button ion-item (click)="openPage(homePage)" style="background-color: white">
+            <ion-icon name="radio-button-on" md="md-radio-button-on" style= "color: green">
+            </ion-icon>
+              <font color="#00a857">
+                 Categoria 4
+              </font>
+          </button>
+      
+          <button ion-item (click)="openPage(homePage)" style="background-color: white">
+            <ion-icon name="radio-button-on" md="md-radio-button-on" style= "color: green">
+            </ion-icon>
+              <font color="#00a857">
+                 Categoria 5
+              </font>
+          </button>
+      
+          <button ion-item (click)="openPage(homePage)" style="background-color: white">
+            <ion-icon name="radio-button-on" md="md-radio-button-on" style= "color: green">
+            </ion-icon>
+              <font color="#00a857">
+                 Categoria 6
+              </font>
+          </button>
+      
+          <button ion-item (click)="openPage(homePage)" style="background-color: white">
+            <ion-icon name="radio-button-on" md="md-radio-button-on" style= "color: green">
+            </ion-icon>
+              <font color="#00a857">
+                 Categoria 7
+              </font>
+          </button>
+      
+          <button ion-item (click)="openPage(homePage)" style="background-color: white">
+            <ion-icon name="radio-button-on" md="md-radio-button-on" style= "color: green">
+            </ion-icon>
+              <font color="#00a857">
+                 Categoria 8
+              </font>
+          </button>
+      
+          <button ion-item (click)="openPage(homePage)" style="background-color: white">
+            <ion-icon name="radio-button-on" md="md-radio-button-on" style= "color: green">
+            </ion-icon>
+              <font color="#00a857">
+                 Categoria 9
+              </font>
+          </button>
+        </div>
+      </ion-list>
+    </ion-content>
+      <ion-nav id="nav" #content [root]="rootPage">
+      </ion-nav>
   </ion-content>
-
 </ion-menu>
-
-<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
 <ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

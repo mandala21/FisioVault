@@ -6,6 +6,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
+import { InfoPage } from '../pages/info/info';
+import { VideoPage } from '../pages/video/video';
 
 @Component({
   templateUrl: 'app.html'
@@ -13,7 +15,7 @@ import { LoginPage } from '../pages/login/login';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginPage;
+  rootPage: any = VideoPage;
 
   pages: Array<{title: string, component: any}>;
 

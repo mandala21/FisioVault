@@ -9,13 +9,17 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
+import { InfoPage } from '../pages/info/info';
+import { VideoPage } from '../pages/video/video';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    LoginPage
+    LoginPage,
+    InfoPage,
+    VideoPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,9 @@ import { LoginPage } from '../pages/login/login';
     MyApp,
     HomePage,
     ListPage,
-    LoginPage
+    LoginPage,
+    InfoPage,
+    VideoPage
   ],
   providers: [
     StatusBar,
