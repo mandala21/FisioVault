@@ -15,7 +15,7 @@ import { VideoPage } from '../pages/video/video';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = VideoPage;
+  rootPage: any = HomePage;
 
   pages: Array<{title: string, component: any}>;
 
