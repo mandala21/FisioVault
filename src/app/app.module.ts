@@ -11,6 +11,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { InfoPage } from '../pages/info/info';
 import { VideoPage } from '../pages/video/video';
+import { CadastroPage } from '../pages/cadastro/cadastro';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { VideoPage } from '../pages/video/video';
     ListPage,
     LoginPage,
     InfoPage,
-    VideoPage
+    VideoPage,
+    CadastroPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { VideoPage } from '../pages/video/video';
     ListPage,
     LoginPage,
     InfoPage,
-    VideoPage
+    VideoPage,
+    CadastroPage
   ],
   providers: [
     StatusBar,

@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { LoginPage } from '../pages/login/login';
 import { InfoPage } from '../pages/info/info';
 import { VideoPage } from '../pages/video/video';
+import { CadastroPage } from '../pages/cadastro/cadastro';
 
 @Component({
   templateUrl: 'app.html'
@@ -15,7 +16,7 @@ import { VideoPage } from '../pages/video/video';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = CadastroPage;
 
   pages: Array<{title: string, component: any}>;
 
